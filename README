@@ -1,0 +1,5 @@
+Zero Cubed Website
+------------------
+
+Each directory represents a separate website. The www directory in each directory represents the root directory exposable to the outside world through a web server. All other directories *are not meant to be web-accessible*. Each directory contains / will contain an additional README file describing each website project.
+
