@@ -6,6 +6,9 @@ CREATE TABLE IF NOT EXISTS `users` (`id` int NOT NULL AUTO_INCREMENT, `name` tex
 
 CREATE TABLE IF NOT EXISTS `tokens` (`id` int NOT NULL AUTO_INCREMENT, `token` text NOT NULL, `user` int NOT NULL, `expiration` int NOT NULL, PRIMARY KEY (`id`)) CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS `appsecret` (`id` int NOT NULL AUTO_INCREMENT, `appsecret` text NOT NULL, `name` TEXT NOT NULL, PRIMARY KEY(`id`)) CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+-- The following portion is sample data
 
+INSERT INTO `appsecret` (appsecret, name) VALUES ('$2y$10$CY9bBnwwgBTG5.K4X0iu5.zuA/kyRtVZnLejAKujs880QDw5bwTRS', 'Zero³ Website'); --JVapLItBH0ytdJCsa
 
