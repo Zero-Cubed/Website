@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8"/>
+<title>Zero Cubed Login</title>
 <style>
-
-
+/*
 ul {
     list-style-type: none;
     margin: 0;
@@ -25,53 +26,58 @@ li a {
     padding: 16px 18px;
     text-decoration: none;
 }
-
-a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-background-color:#;
-}
+*/
 
 
 
 
 .button {
     
-    background-color: #000000; /* Green */
-    border: none;
-    color: white;
-    padding: 35px 72px;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 96px;
-    margin: 4px 2px;
+    font-size: x-large;
     cursor: pointer;
-    position: absolute;
-    right: 590px;
-    top: 340px;
-   border-radius: 5px; 
--moz-border-radius: 5px; 
--webkit-border-radius: 5px; 
-border: 2px solid;
+    border: 2px solid black;
+    border-radius: 2px; 
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+
 }
 
-.button1 {font-size: 10px;}
-.button2 {font-size: 12px;}
-.button3 {font-size: 36px;}
-.button4 {font-size: 20px;}
-.button5 {font-size: 24px;}
+.loginbox {
+    
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 2px; 
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+    
+    width: 500px;
+    height: 500px;
+    
+    margin-top: 10%;
 
+}
 
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: normal;
+    letter-spacing: -1px;
+}
 
 </style>
 
 
 </head>
-<body bgcolor="">
-
+<body>
+<!--
 <ul>
 <center>
   <li><a href="index.php">Home</a></li>
@@ -80,8 +86,6 @@ border: 2px solid;
   <li><a href="login.php">Login</a></li>
 <center/>
 </ul>
+-->
 
-
-</body>
-</html>
 

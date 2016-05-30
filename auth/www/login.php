@@ -1,4 +1,4 @@
-<?php include 'Header.php';
+<?php
 
     require("common.php");
     
@@ -63,7 +63,7 @@
             
             $_SESSION['user'] = $row;
             
-            header("Location: home.php");
+            header("location: home.php");
             die("Redirecting to: home.php");
         }
         else
@@ -73,32 +73,21 @@
             $submitted_username = htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
         }
     
-    
+
+require 'Header.php';
 ?>
 
+<div class="loginbox"/>
+<h2>Zero³ Login</h2>
+<form action="login.php" method="POST">
+<label for="username">Username:</label><input id="username" name="username" type="text"/>
+<br/>
+<label for="password">Password:</label><input id="password" name="password" type="password"/>
+<br/>
+<input type="button" class="button" value="Login"/>
+<p>Don't have a Zero³ account? <a href="register.php">Register</a>.</p>
+</div>
 
-<form action="login.php" method="post">
-<div id="contact"> 
-<form action="login.php" method="post">
-        <div class="input_label user"> 
-            <label for="name"> 
-<form action="login.php" method="post">
-                Username</label></div> 
-<form action="login.php" method="post">
-        <input id="name" class="name" size="30" type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
-    </div> 
-<br> 
-<div id="contact"> 
-        <div class="input_label user"> 
-            <label for="name"> 
-                Password</label></div> 
-        <input type="text" id="name" class="name" size="30" type="password" name="password" value="" /> 
-<br /><br />
-    <input type="submit" value="Login" />   
- </div> 
- </form>
-<a href="register.php">Register</a>
- 
-<style> 
+</body>
+</html>
 
-</style> 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Zero³ Login</title>
+<style>
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: center;
+    display: inline-block;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+*/
+
+body
+{
+    font-family: sans-serif;
+    background-color: #777;
+    background-image: url('noise-bg-777.png');
+}
+
+.button {
+    
+    background-color: #fff;
+    color: black;
+    padding: 2px 15px;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    border: 2px solid black;
+    /*border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;*/
+
+}
+
+.button:hover
+{
+    background-color: #000;
+    color: #fff;
+}
+
+.loginbox {
+    
+    background-color: #fff;
+    color: black;
+   
+    
+    text-align: center;
+   
+    
+    border: 2px solid #fff;
+    border-radius: 3px;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    
+    transition: 1s;
+    left: 0;
+    
+    
+    
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 4%;
+    
+    
+    
+    box-shadow: 10px 10px 5px #333;
+    -moz-box-shadow: 10px 10px 5px #333;
+    -webkit-box-shadow: 10px 10px 5px #333;
+
+}
+
+.textinput
+{
+    border: 2px solid black;
+    /*border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;*/
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    
+    letter-spacing: -1px;
+}
+
+</style>
+
+
+</head>
+<body>
+<!--
+<ul>
+<center>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="#news">Updates</a></li>
+  <li><a href="register.php">Register</a></li>
+  <li><a href="login.php">Login</a></li>
+<center/>
+</ul>
+-->
+
+<div class="loginbox">
+<h2>³Account Login</h2>
+<form action="login.php" method="POST">
+<table border="0" style="margin: auto">
+<tr>
+<td><label for="username">Username:</label></td><td><input id="username" name="username" type="text" class="textinput"/></td>
+</tr>
+<tr>
+<td><label for="password">Password:</label></td><td><input id="password" name="password" type="password" class="textinput"/></td>
+</tr>
+<tr>
+<td>&nbsp;</td><td><input type="button" class="button" value="Login" style="float: right"/></td>
+</tr>
+</table>
+
+<p>Don't have a Zero³ account? Register for one <a href="register.php">here</a>.</p>
+</div>
+
+</body>
+</html>

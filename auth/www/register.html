@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Zero³ Registration</title>
+<style>
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: center;
+    display: inline-block;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+*/
+
+body
+{
+    font-family: sans-serif;
+    background-color: #777;
+    background-image: url('noise-bg-777.png');
+}
+
+.button {
+    
+    background-color: #fff;
+    color: black;
+    padding: 2px 15px;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    border: 2px solid black;
+    /*border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;*/
+
+}
+
+.button:hover
+{
+    background-color: #000;
+    color: #fff;
+}
+
+.loginbox {
+    
+    background-color: #fff;
+    color: black;
+   
+    
+    text-align: center;
+   
+    
+    border: 2px solid #fff;
+    border-radius: 3px;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    
+    transition: 1s;
+    left: 0;
+    
+    
+    
+    width: 500px;
+    
+    margin: 0 auto;
+    margin-top: 4%;
+    
+    
+    
+    box-shadow: 10px 10px 5px #333;
+    -moz-box-shadow: 10px 10px 5px #333;
+    -webkit-box-shadow: 10px 10px 5px #333;
+
+}
+
+.textinput
+{
+    border: 2px solid black;
+    /*border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;*/
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    
+    letter-spacing: -1px;
+}
+
+</style>
+
+
+</head>
+<body>
+<!--
+<ul>
+<center>
+  <li><a href="index.php">Home</a></li>
+  <li><a href="#news">Updates</a></li>
+  <li><a href="register.php">Register</a></li>
+  <li><a href="login.php">Login</a></li>
+<center/>
+</ul>
+-->
+
+<div class="loginbox">
+<h2>Register a Zero³ Account</h2>
+<p>A Zero³ account lets you download and play Zero³ games as well as network with other players.</p>
+<form action="register.php" method="POST">
+<table border="0" style="margin: auto;text-align: left">
+<tr>
+<td><label for="username">Username:</label></td><td><input id="username" name="username" type="text" class="textinput"/></td>
+</tr>
+<tr>
+<td style="font-size: small;text-align: left;" colspan="2">Choose wisely. It cannot be changed.</td>
+</tr>
+<tr>
+<td><label for="password">Password:</label></td><td><input id="password" name="password" type="password" class="textinput"/></td>
+</tr>
+<tr>
+<td style="font-size: small;text-align: left;" colspan="2">Must be at least 8 characters.</td>
+</tr>
+<tr>
+<td><label for="email">E-mail:</label></td><td><input id="email" name="email" type="email" class="textinput"/></td>
+</tr>
+<tr>
+<td style="font-size: small;text-align: left;" colspan="2">Needed for activation.</td>
+</tr>
+<tr>
+<td>&nbsp;</td><td><input type="button" class="button" value="Register" style="float: right"/></td>
+</tr>
+</table>
+
+<p>Already have a Zero³ account? Login <a href="login.php">here</a>.</p>
+</div>
+
+</body>
+</html>
