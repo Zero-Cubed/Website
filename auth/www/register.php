@@ -103,7 +103,7 @@ if($message == "success")
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Zero³ Registration</title>
+<title>Z3 Account Registration</title>
 <style>
 body
 {
@@ -186,8 +186,8 @@ h1,h2,h3,h4,h5,h6
 </head>
 <body>
 <div class="loginbox">
-<h2>Zero³ Account</h2>
-<p>You have successfully registered a Zero³ account.</p>
+<h2>Z3 Account</h2>
+<p>You have successfully registered a Z3 account.</p>
 </div>
 </body>
 </html>
@@ -200,7 +200,7 @@ else
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Zero³ Registration</title>
+<title>Z³ Account Registration</title>
 <style>
 body
 {
@@ -289,8 +289,8 @@ h1,h2,h3,h4,h5,h6
 </head>
 <body>
 <div class="loginbox">
-<h2>Register a Zero³ Account</h2>
-<p>A Zero³ account lets you download and play Zero³ games as well as network with other players.</p>
+<h2>Register a Z3 Account</h2>
+<p>A Z3 account lets you download and play Zero<sup>3</sup> games as well as network with other players.</p>
 <?php echo $message; ?>
 <form action="register.php" method="POST">
 <table border="0" style="margin: auto;text-align: left">
@@ -316,7 +316,7 @@ h1,h2,h3,h4,h5,h6
 <td>&nbsp;</td><td><input type="submit" class="button" value="Register" style="float: right"/></td>
 </tr>
 </table>
-<p>Already have a Zero³ account? Login <a href="login.php">here</a>.</p>
+<!--<p>Already have a Z<sup>3</sup> account? Login <a href="login.php">here</a>.</p>-->
 </div>
 </body>
 </html>

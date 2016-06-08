@@ -8,7 +8,11 @@ CREATE TABLE IF NOT EXISTS `tokens` (`id` int NOT NULL AUTO_INCREMENT, `token` t
 
 CREATE TABLE IF NOT EXISTS `appsecret` (`id` int NOT NULL AUTO_INCREMENT, `appsecret` text NOT NULL, `name` TEXT NOT NULL, PRIMARY KEY(`id`)) CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS `tokencode` (`id` int NOT NULL AUTO_INCREMENT, `code` text NOT NULL, `appsecret` int NOT NULL, `token` int NOT NULL, `expiration` int NOT NULL, PRIMARY KEY(`id`)) CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 -- The following portion is sample data
 
-INSERT INTO `appsecret` (appsecret, name) VALUES ('$2y$10$CY9bBnwwgBTG5.K4X0iu5.zuA/kyRtVZnLejAKujs880QDw5bwTRS', 'Zero³ Website'); --JVapLItBH0ytdJCsa
+-- JVapLItBH0ytdJCsa
+INSERT INTO `appsecret` (appsecret, name) VALUES ('$2y$10$CY9bBnwwgBTG5.K4X0iu5.zuA/kyRtVZnLejAKujs880QDw5bwTRS', 'Zero³ Website');
+
 
